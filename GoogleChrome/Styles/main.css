@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  /* Quitamos todos los margenes y paddings de los elementos. Especificamos formatos de letra */
+  padding: 0;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  /* text-decoration:none hace que no tenga el subrayado los links u otro formato de letra */
+  cursor: pointer;
+  /* cursor:pointer hace que cuando pasemos el cursor cambie su formato  por una mano señalando */
+}
+
+header {
+  width: 100%;
+  /* Al ser una de las secciónes más importantes el footer siempre ocupara el 100% de la pantalla */
+  height: 60px;
+}
+
+header nav {
+  display: flex;
+  /* display:flex junto con justify-content:flex-end hace que envíe los elementos pegados a la derecha o al final del elemento */
+  justify-content: flex-end;
+}
+
+header nav .nav-right-section {
+  width: 250px;
+  display: flex;
+  /* display:flex pasa los elementos de estar ordenados vertical a horizontal */
+  list-style: none;
+  justify-content: center;
+  /* justify-content:center centra el contenido tomando como base izq y der */
+  align-items: center;
+  /*align-items:center  centra el contenido tomando como base arriba y abajo */
+}
+
+nav .nav-right-section a {
+/* Elegimos las etiquetas (a) que esten dentro de la sección nav con clase .nav-right-section*/
+  margin-inline-end: 10px;
+  /* margin-inline:10px establecemos un espacio de 10px hacia la derecha */
+  color: black;
+}
+
+nav .nav-right-section .menu-icon {
+  /* De esta forma pondremos el logo como icono en el menu */
+  background-image: url('https://www.pngkey.com/png/detail/207-2070054_grid-menu-gallery-set-collection-android-interface-google.png');
+  /* background-image:url('') especificamos la ruta de donde obtenemos la imagen */
+  background-repeat: no-repeat;
+  /* background-repeat:no-repeat Hace que no se repita la imagen */
+  background-position: center;
+  /* background-position:center centramos la imagen en el contenedor */
+  background-size: contain;
+  /* background-size:contain hacemos que la imagen tenga el tamaño del contenedor */
+  width: 25px;
+  /* Especificamos anchura */
+  height: 25px;
+  /* Especificamos altura */
+}
+
+nav .nav-right-section img {
+/* Con esta ruta modificaremos las imagenes que esten en la sección nav con la clase .nav-right-section */
+  border-radius: 50%;
+  /* border-radius:50%; Coloca bordes redondeados en la imagen */
+  margin-inline-start: 10px;
+  /* margin-inline-start:10px Establecemos este margen para darle espacio a la izq y no pegue con el icono*/
+  width: 40px;
+  height: 40px;
+}
+
+main {
+/* Formato que afectara a todo la sección main */
+  margin-block-start: 150px;
+  /* margin-block-start: lo usamos para darle un espacio hacia arriba de 150px de forma logica */
+  text-align: center;
+  /* text-align:center; centramos la información de izq a derecha */
+}
+
+main .main-logo {
+  /* Ajustamos la 1a sección del main clase .main-logo */
+  width: 540px;
+  /* width tamaño del contenedor de la imagen */
+  margin: 0 auto;
+  /* margin: 0 auto; con esto centramos el contenedor de izq a derecha */
+  margin-block-end: 35px;
+  /* margin-block-end: 35px; poneemos un espacio hacia abajo del bloque de 35 px */
+}
+
+main .main-logo img {
+  /* Seleccionamos las img de la sección main clase .main-logo para ajustar su tamaño */
+  width: 300px;
+}
+
+main .main-input {
+  /* Ajustamos la 2a sección del main clase .main-input */
+  width: 530px;
+  margin: 0 auto;
+  /* margin: 0 auto; con esto centramos el contenedor de izq a derecha */
+  margin-block-end: 35px;
+  /* margin-block-end: 35px; espacio hacia abajo de 35 representado de forma logica*/
+}
+
+main .main-input-container {
+/* Damos formato a la barra de busqueda aka los imputs */
+  width: 525px;
+  border: 2px solid #dee1e4;
+  /* border: 2px solid #dee1e4; Establecemos el formato del borde de la barra  */
+  border-radius: 100px;
+  /* border-radius: 100px; se aplican bordes redondeados */
+  display: flex;
+  /* display: flex; convierte al elemento en item flex y se acomoda como columnas */
+  justify-content: center;
+  /* justify-content: center; centramos los items de der a izq */
+  align-items: center;
+  /* align-items: center; centramos los items de arriba a abajo */
+}
+main .main-input .search-icon {
+/* Colocamos el icono de la lupa como fondo y lo adaptamos al tamaño */
+  background-image: url('https://w7.pngwing.com/pngs/440/211/png-transparent-computer-icons-font-awesome-google-search-logo-web-search-engine-magnifying-glass-bing-logo-vector-icons.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+main .main-input input {
+/* Modificamos el cuadro de busqueda donde se ingresa la información */
+  width: 450px;
+  height: 40px;
+  border: none;
+  /* border: none; quitamos el formato del borde */
+  outline: none;
+  /* outline: none; quitamos el espacio que se ve al dar clic en el contenedor del input */
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+main .main-input-container:hover {
+/* Establecemos el estilo del contenedor cuando pasemos el puntero sobre este elemento */
+  box-shadow: 0 2px 8px 0 black;
+  /* box-shadow: 0 1px 6px 0 black; es la sobra que sale del contenedor de búsqueda  */
+  border-color: #dfe1e500;
+}
+
+main .main-input .micro-icon {
+  /* Colocamos el icono del microfono como fondo y lo adaptamos al tamaño */
+  background-image: url('https://img2.freepng.es/20180410/prw/kisspng-microphone-google-voice-google-search-google-logo-microphone-5accc7048689d8.1298385515233697325511.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+main .main-buttons div {
+  /* Pondremos los botones en fila mediante un display: inline-block */
+  display: inline-block;
+  /* display: inline-block; los elementos que estaban ocupando cada uno una fila ahora comparten 1 */
+}
+
+main .main-buttons button {
+/* Le damos formato a los botones */
+  height: 36px;
+  background-color: #f2f2f2;
+  border: 0;
+  font-size: 14px;
+  color: #5f6368;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin-right: 15px;
+}
+
+main .main-buttons button:hover{
+  /* Formato para cuando pocisionamos el cursor en estos elementos */
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px #000001;
+  color: #222;
+}
+
+footer  {
+  /* Al ser una de las secciónes más importantes el footer siempre ocupara el 100% de la pantalla pegado al fondo */
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  /* La position:absolut necesita que especifiquemos desde donde se situara y por eso usamos bottom:0 */
+  display: grid;
+  /* Display:grid Separa el contenedor en cuadriculas y se especifica la cantidad con cuantos 1fr se necesiten  */
+  grid-template-columns: 1fr 1fr;
+  /* Dos 1fr es igual a dos columnas, si quisieramos una tercera agregaríamos 1fr más */
+  align-items: center;
+  font-size: 13px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+footer ul {
+  /* Modificamos el formato de la lista */
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+  /* fija el contenido hacia la izquierda del contenedor */
+}
+
+footer .footer-left {
+  justify-self: left;
+}
+
+footer .footer-right {
+  justify-self: right;
+  /* justifica el texto hacia la derecha del contenedor */
+}
+footer ul li a {
+  margin: 10px;
+  color: #5f6368;
+}
